@@ -39,3 +39,53 @@ Multiple receipts:
 Calibration (analytics mode), if you have a set of labelled data (expected json output files in the same format as printer):
 
 `python receipt_parser.py -a path-to-img-dir path-to-output-dir path-to-training-labels path-to-analytics-output-dir`
+
+# Example
+
+input:
+
+![Input](https://github.com/examples/receipt-0002.png)
+
+Output:
+
+```json 
+{
+    "day": "1",
+    "month": "12",
+    "year": "20",
+    "total_whole_part": "13",
+    "total_fractional_part": "44",
+    "items": [
+        {
+            "name": "eggs",
+            "price_whole_part": "1",
+            "price_fractional_part": "50"
+        },
+        {
+            "name": "vegetables ~",
+            "price_whole_part": "1",
+            "price_fractional_part": "50"
+        },
+        {
+            "name": "bbq pizza",
+            "price_whole_part": "3",
+            "price_fractional_part": "50"
+        },
+        {
+            "name": "frui}. juice x",
+            "price_whole_part": "0",
+            "price_fractional_part": "69"
+        },
+        {
+            "name": "- pizza .",
+            "price_whole_part": "2",
+            "price_fractional_part": "75"
+        },
+        {
+            "name": "pizza",
+            "price_whole_part": "3",
+            "price_fractional_part": "50"
+        }
+    ]
+}
+```
