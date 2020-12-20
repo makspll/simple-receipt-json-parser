@@ -9,6 +9,7 @@ verify_ssl = true
 opencv-python = "*"
 matplotlib = "*"
 pytesseract = "*"
+numpy = "*"
 
 [requires]
 python_version = "3.7"
