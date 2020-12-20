@@ -44,7 +44,7 @@ Calibration (analytics mode), if you have a set of labelled data (expected json 
 
 input:
 
-![Input](https://github.com/examples/receipt-0002.png)
+![Input](https://github.com/makspll/simple-receipt-json-parser/blob/master/examples/receipt-0002.png)
 
 Output:
 
